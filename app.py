@@ -13,5 +13,3 @@ for index in range(0, len(names)):
         names[index].get("party"),
         names[index]["jurisdiction"]["name"],
     )
-
-print(names)
