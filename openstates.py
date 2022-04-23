@@ -2,15 +2,10 @@ import requests
 
 
 class openStates:
-
-    # TODO:: #2 Make Missouri the default state for people searches
-
     def __init__(self, apikey):
         self.apikey = apikey
 
     def search_people(self, name):
-
-        # TODO: #3 Add more examples of responses
 
         # sample response from people query
 
@@ -24,7 +19,9 @@ class openStates:
             "accept": "application/json",
         }
 
-        # Setting jurisdiction to Missouri so only Missouri people are returned
+        # TODO: #4 add better comment
+        # Setting jurisdiction to Missouri so only Missouri people are returned -
+        # ocd-jurisdiction/country:us/state:mo/government
 
         params = {
             "jurisdiction": "ocd-jurisdiction/country:us/state:mo/government",
