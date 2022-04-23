@@ -5,7 +5,7 @@ apikey = config.openstate
 
 o = openStates(apikey)
 
-names = o.search_people("Bob Onder")
+names = o.search_people("Smith")
 
 for index in range(0, len(names)):
     print(
@@ -13,3 +13,5 @@ for index in range(0, len(names)):
         names[index].get("party"),
         names[index]["jurisdiction"]["name"],
     )
+    
+print(names)
